@@ -9,6 +9,5 @@
     <string name="username_default_text">Default username</string>
     <string name="location_default_text">Default location</string>
     <string name="likes_default_text">Default likes count</string>
-    
-    
+
 </resources>
