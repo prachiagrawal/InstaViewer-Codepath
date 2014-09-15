@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IntagramViewer</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="popular_photos_caption">Popular Photos</string>
+    <string name="caption_default_text">Default caption</string>
+    <string name="username_default_text">Default username</string>
+    <string name="location_default_text">Default location</string>
+    <string name="likes_default_text">Default likes count</string>
+    
+    
+</resources>

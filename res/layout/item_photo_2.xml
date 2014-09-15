@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imgPhoto123"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tvUsername123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imgPhoto123"
+        android:paddingRight="5sp"
+        android:text="@string/username_default_text"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvCaption123"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvUsername123"
+        android:layout_alignBottom="@+id/tvUsername123"
+        android:layout_toRightOf="@+id/tvUsername123"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingBottom="20dp"
+        android:text="@string/caption_default_text" />
+
+</RelativeLayout>
