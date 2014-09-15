@@ -28,21 +28,22 @@ public final class R {
         public static final int location=0x7f020003;
     }
     public static final class id {
-        public static final int action_settings=0x7f08000f;
-        public static final int imgBubble=0x7f08000a;
-        public static final int imgHeart=0x7f080009;
-        public static final int imgLikes=0x7f080006;
-        public static final int imgPhoto=0x7f080005;
-        public static final int imgPhoto123=0x7f08000b;
+        public static final int action_settings=0x7f080010;
+        public static final int imgBubble=0x7f08000b;
+        public static final int imgHeart=0x7f08000a;
+        public static final int imgLikes=0x7f080007;
+        public static final int imgLocation=0x7f080004;
+        public static final int imgPhoto=0x7f080006;
+        public static final int imgPhoto123=0x7f08000c;
         public static final int imgUserDP=0x7f080002;
         public static final int lvPhotos=0x7f080001;
-        public static final int lvPhotos123=0x7f08000e;
+        public static final int lvPhotos123=0x7f08000f;
         public static final int swipeContainer=0x7f080000;
-        public static final int tvCaption=0x7f080008;
-        public static final int tvCaption123=0x7f08000d;
-        public static final int tvLikes=0x7f080007;
-        public static final int tvLocation=0x7f080004;
-        public static final int tvUsername123=0x7f08000c;
+        public static final int tvCaption=0x7f080009;
+        public static final int tvCaption123=0x7f08000e;
+        public static final int tvLikes=0x7f080008;
+        public static final int tvLocation=0x7f080005;
+        public static final int tvUsername123=0x7f08000d;
         public static final int tvUsernameTop=0x7f080003;
     }
     public static final class layout {

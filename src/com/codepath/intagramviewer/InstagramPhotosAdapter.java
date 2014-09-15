@@ -22,6 +22,7 @@ public class InstagramPhotosAdapter extends ArrayAdapter<InstagramPhoto> {
         ImageView userDP;
         TextView likes;
         TextView location;
+        ImageView location_icon;
     }
     
 	public InstagramPhotosAdapter(Context context, List<InstagramPhoto> photos) {
@@ -45,6 +46,7 @@ public class InstagramPhotosAdapter extends ArrayAdapter<InstagramPhoto> {
 			viewholder.userDP = (ImageView) convertView.findViewById(R.id.imgUserDP);
 			viewholder.likes = (TextView) convertView.findViewById(R.id.tvLikes);
 			viewholder.location = (TextView) convertView.findViewById(R.id.tvLocation);
+			viewholder.location_icon = (ImageView) convertView.findViewById(R.id.imgLocation);
 			convertView.setTag(viewholder);
 		} else {
 			viewholder = (ViewHolder) convertView.getTag(); 
@@ -55,9 +57,18 @@ public class InstagramPhotosAdapter extends ArrayAdapter<InstagramPhoto> {
                 + "  " + "</b></font>" + "<font color=\"#000000\">" + photo.caption + "</font>"));
 		viewholder.likes.setText(Integer.toString(photo.likes_count) + " likes");
 		viewholder.location.setText(photo.location);
+		
+		if (photo.location == null || photo.location.isEmpty()) {
+			viewholder.location_icon.setVisibility(View.GONE);
+		} else {
+			viewholder.location_icon.setVisibility(View.VISIBLE);
+		}
 
 		// Set the image height before loading
 		viewholder.photo.getLayoutParams().height = parent.getWidth();
+		
+		viewholder.userDP.getLayoutParams().height = 80;
+		viewholder.userDP.getLayoutParams().width = 80;
 		
 		// Reset the image from the recycled view
 		viewholder.photo.setImageResource(0);
@@ -68,7 +79,7 @@ public class InstagramPhotosAdapter extends ArrayAdapter<InstagramPhoto> {
 		// Convert the bytes to a bitmap, resize the image, insert the bitmap into imageview
 		Picasso.with(getContext()).load(photo.imageUrl).into(viewholder.photo);
 		Picasso.with(getContext()).load(photo.userImageUrl)
-			.transform(new RoundedTransformation(50, 30)).into(viewholder.userDP);
+			.transform(new RoundedTransformation(50, 20)).into(viewholder.userDP);
 		
 		// Return the view for that data item
 		return convertView;

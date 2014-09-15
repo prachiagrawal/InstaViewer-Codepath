@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingBottom="15dp"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -9,26 +10,41 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:scaleType="centerInside"
+        android:scaleType="fitStart"
         android:src="@drawable/ic_launcher" />
 
     <TextView
         android:id="@+id/tvUsernameTop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/tvLocation"
-        android:layout_alignLeft="@+id/tvLocation"
+        android:layout_alignTop="@+id/imgUserDP"
+        android:layout_toRightOf="@+id/imgUserDP"
+        android:layout_marginLeft="10dp"
         android:text="@string/username_default_text"
         android:textColor="#206199"
         android:textStyle="bold" />
+    
+    <ImageView
+        android:id="@+id/imgLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvUsernameTop"
+        android:layout_alignLeft="@+id/tvUsernameTop"
+        android:layout_marginTop="5dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="15dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/location" />
 
     <TextView
         android:id="@+id/tvLocation"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imgUserDP"
-        android:layout_toRightOf="@+id/imgUserDP"
+        android:layout_alignBottom="@+id/imgLocation"
+        android:layout_toRightOf="@+id/imgLocation"
         android:text="@string/location_default_text"
+        android:ellipsize="end"
+        android:maxLines="1"
         android:textColor="#206199" />
 
     <ImageView
