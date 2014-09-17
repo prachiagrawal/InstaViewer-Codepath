@@ -34,7 +34,7 @@
         android:adjustViewBounds="true"
         android:maxHeight="15dp"
         android:scaleType="fitStart"
-        android:src="@drawable/location" />
+        android:src="@drawable/location_blue" />
 
     <TextView
         android:id="@+id/tvLocation"
@@ -93,13 +93,51 @@
         android:maxLines="3"
         android:paddingRight="5sp"
         android:text="@string/caption_default_text" />
+ 
+    <TextView
+        android:id="@+id/tvCommentsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvCaption"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:textColor="#A4A4A4"
+        android:textStyle="bold" 
+        android:text="@string/comments_count_default_text" />
+ 
+    <TextView
+        android:id="@+id/tvCommentSecondLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvCommentsCount"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingRight="5sp"
+        android:text="@string/comments_default_text" />
+
+    <TextView
+        android:id="@+id/tvCommentLast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvCommentSecondLast"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="2dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:paddingRight="5sp"
+        android:text="@string/comments_default_text" />
 
     <ImageView
         android:id="@+id/imgHeart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/tvCaption"
+        android:layout_below="@+id/tvCommentLast"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="8dp"
         android:adjustViewBounds="true"
@@ -121,5 +159,29 @@
         android:paddingRight="5dp"
         android:scaleType="centerInside"
         android:src="@drawable/comment_bubble" />
+
+    <ImageView
+        android:id="@+id/ivTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:maxHeight="15dp"
+        android:paddingRight="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/time_grey" />
+
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ivTime"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="18dp"
+        android:textColor="#A4A4A4"
+        android:text="@string/time_default_text" />
 
 </RelativeLayout>

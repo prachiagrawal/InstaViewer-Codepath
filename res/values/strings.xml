@@ -9,5 +9,9 @@
     <string name="username_default_text">Default username</string>
     <string name="location_default_text">Default location</string>
     <string name="likes_default_text">Default likes count</string>
+    <string name="comments_count_default_text">Default comments count</string>
+    <string name="comments_default_text">Default comment text</string>
+    <string name="time_default_text">Default time text</string>
+        
 
 </resources>
